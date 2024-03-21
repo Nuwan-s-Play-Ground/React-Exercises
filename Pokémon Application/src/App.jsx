@@ -3,13 +3,15 @@ import PokemonList from './PokemonList';
 import axios from 'axios';
 
 function App() {
-  const [pokemon, setPokemon] = useState (["bulbasaur", "charmandaur"]);
 
-  useEffect(()=>{
-    axios.get("https://pokeapi.co/api/v2/pokemon").then(res =>{
+  const [pokemon, setPokemon] = useState (["bulbasaur", "charmandaur"]);
+  const [currentPageUrl, setCurrentPageUrl] = useState("https://pokeapi.co/api/v2/pokemon");
+
+  useEffect((currentPageUrl)=>{
+    axios.get().then(res =>{
     setPokemon(res.data.results.map(p => p.name))
   });
-  },[]);
+  },[currentPageUrl]);
 
   
   return (
