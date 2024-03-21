@@ -4,9 +4,12 @@ import axios from 'axios';
 
 function App() {
   const [pokemon, setPokemon] = useState (["bulbasaur", "charmandaur"]);
+  axios.get("https://pokeapi.co/api/v2/pokemon").then(res =>{
+    setPokemon(res.data.results.map(p => p.name))
+  });
   return (
     <PokemonList pokemon={pokemon}/>
   );
 }
 
-export default App
+export default App;
