@@ -44,7 +44,9 @@ Contributions to this project are welcome! If you find any issues or have sugges
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+Copyright &copy; 2024 vpn6666Solutions.com. All Rights Reserved. <br>
+This project is licensed under the [MIT License](License.txt) - see the [MIT License](License.txt) file for details.
+
 
 ## Acknowledgments
 
