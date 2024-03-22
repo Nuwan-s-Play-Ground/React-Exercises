@@ -8,18 +8,37 @@ function App() {
   const [currentPageUrl, setCurrentPageUrl] = useState("https://pokeapi.co/api/v2/pokemon");
   const [nextPageUrl, setNextPageUrl] = useState();
   const [prevPageUrl, setPrevPageUrl] = useState();
+  const [loading, setLoading] = useState(true)
 
   useEffect(()=>{
+    setLoading(true);
     axios.get(currentPageUrl).then(res =>{
-    setNextPageUrl(res.data.next)
-    setPrevPageUrl(res.data.previous)
-    setPokemon(res.data.results.map(p => p.name))
+      setLoading(false);
+      setNextPageUrl(res.data.next)
+      setPrevPageUrl(res.data.previous)
+      setPokemon(res.data.results.map(p => p.name))
   });
+
+    return () => cancel();
   },[currentPageUrl]);
+
+  function gotoNextPage(){
+    setCurrentPageUrl(nextPageUrl);
+  }
+
+  function gotoPrevPage(){
+    setCurrentPageUrl(prevPageUrl);
+  }
 
   
   return (
-    <PokemonList pokemon={pokemon}/>
+    <>
+      <PokemonList pokemon={pokemon}/>
+      <Pagination
+        gotoNextPage = {gotoNextPage}
+        gotoPrevPage = {gotoPrevPage}
+      />
+    </>   
   );
 }
 
