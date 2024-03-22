@@ -34,6 +34,8 @@ function App() {
     setCurrentPageUrl(prevPageUrl);
   }
 
+  if (loading) return "Loading..."
+  
   return (
     <>
       <PokemonList pokemon={pokemon}/>
