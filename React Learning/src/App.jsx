@@ -1,4 +1,6 @@
+import React from 'react'
 import { useState } from 'react'
+import Footer from './Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,7 @@ function App() {
       <main>
         <p>I love to learn Science and Engineering</p>
       </main>
+      <Footer/>
     </>
   )
 }
