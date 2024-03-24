@@ -1,24 +1,16 @@
 import React from 'react'
 import { useState } from 'react'
 import Footer from './Footer'
+import Navbar from './Navbar'
+import MainContent from './MainContent'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <nav>
-        <h1>My Education</h1>
-        <ol>
-          <li>Combined Maths</li>
-          <li>Physics</li>
-          <li>Chemistry</li>
-          <li>Software Engineering</li>
-        </ol>
-      </nav>
-      <main>
-        <p>I love to learn Science and Engineering</p>
-      </main>
+      <Navbar/>
+      <MainContent/>
       <Footer/>
     </>
   )
