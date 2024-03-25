@@ -4,7 +4,6 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 import MainContent from './MainContent'
 import Header from './Header'
-import MainContent from './MainContent'
 import MyComponent from './MyComponent'
 
 function App() {
