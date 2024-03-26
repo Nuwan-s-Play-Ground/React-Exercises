@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <div>
             <nav>
-                <h1>My Education</h1>
+                <h1 style={{backgroundColor:"yellow", color:"red"}}>My Education</h1>
                 <ol>
                     <li>Combined Maths</li>
                     <li>Physics</li>
