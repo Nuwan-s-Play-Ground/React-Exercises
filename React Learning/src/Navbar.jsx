@@ -1,7 +1,10 @@
 import React from 'react'
 
 function Navbar(){
-    const style = {backgroundColor:"yellow", color:"red"}
+    const style = {
+        backgroundColor:"yellow", 
+        color:"red",
+        fontSize:24}
     return(
         <div>
             <nav>
