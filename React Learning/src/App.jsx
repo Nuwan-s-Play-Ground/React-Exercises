@@ -7,6 +7,7 @@ import Header from './Header'
 import MyComponent from './MyComponent'
 import Photos from './Photos'
 import Joke from './Joke'
+import Map from './Map'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
       <Joke
       question="What is your name?"
       answer="My Name is Nuwan"/>
+      <Map/>
       <Photos/>
     </>
   )
