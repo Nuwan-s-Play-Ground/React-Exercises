@@ -26,3 +26,4 @@ const groceryStore = [
 ];
 
 console.log(groceryStore);
+export default groceryStore;

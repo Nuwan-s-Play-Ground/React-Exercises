@@ -8,6 +8,7 @@ import MyComponent from './MyComponent'
 import Photos from './Photos'
 import Joke from './Joke'
 import Map from './Map'
+import Products from './Products'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
       answer="My Name is Nuwan"/>
       <Map/>
       <Photos/>
+      <Products/>
     </>
   )
 }
