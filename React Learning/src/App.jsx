@@ -9,6 +9,7 @@ import Photos from './Photos'
 import Joke from './Joke'
 import Map from './Map'
 import Products from './Products'
+import ClassComponents from './ClassComponents'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
       <Map/>
       <Photos/>
       <Products/>
+      <ClassComponents/>
     </>
   )
 }
