@@ -13,7 +13,7 @@ class ClassComponents extends React.Component{
         return(
             <div>
                 <h1>Learning class based components</h1>
-                <h1>Learning State in React</h1>
+                <h1>Is 'Learning State in React' important?{this.state.answer}</h1>
             </div>
         )
     }
