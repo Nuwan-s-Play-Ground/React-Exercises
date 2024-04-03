@@ -9,7 +9,7 @@ class ClassComponents extends React.Component{
             answer:"Yes",
             name:"Nuwan",
             age:33,
-            isLoggedIn:true
+            isLoggedIn:false
         }
     }
 
