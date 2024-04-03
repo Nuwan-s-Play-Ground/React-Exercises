@@ -11,6 +11,7 @@ import Map from './Map'
 import Products from './Products'
 import ClassComponents from './ClassComponents'
 import EventHandling from './EventHandling'
+import ChangingState from './ChangingState'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
       <Products/>
       <ClassComponents/>
       <EventHandling/>
+      <ChangingState/>
     </>
   )
 }
