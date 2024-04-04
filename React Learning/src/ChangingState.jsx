@@ -13,10 +13,13 @@ class ChangingState extends React.Component{
     }
 
     render(){
-        <div>
+        return(
+            <div>
             <h1>{this.state.count}</h1>
             <button onClick={this.handleClick}>Change</button>
         </div>
+        )
+        
     }
 }
 
