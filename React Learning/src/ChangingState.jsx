@@ -9,7 +9,7 @@ class ChangingState extends React.Component{
     }
 
     handleClick(){
-        this.state.count++
+        this.setState({count : 1})
     }
 
     render(){
