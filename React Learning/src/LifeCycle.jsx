@@ -10,18 +10,26 @@ class LifeCycle extends React.Component{
 
     }
 
-    componentWillReceiveProps(nextProps){
-        if(nextProps.whatever != this.props.whatever){
+    // componentWillMount(){
 
-        }
-    }
+    // }
+
+    // componentWillReceiveProps(nextProps){
+    //     if(nextProps.whatever != this.props.whatever){
+
+    //     }
+    // }
+
+    // componentWillUpdate(){
+
+    // }
 
     shouldComponentUpdate(nextProps, nextState){
 
     }
 
     componentWillUnmount(){
-        
+
     }
 
     render(){
