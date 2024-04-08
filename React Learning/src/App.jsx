@@ -12,6 +12,7 @@ import Products from './Products'
 import ClassComponents from './ClassComponents'
 import EventHandling from './EventHandling'
 import ChangingState from './ChangingState'
+import LifeCycle from './LifeCycle'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,7 @@ function App() {
       <ClassComponents/>
       <EventHandling/>
       <ChangingState/>
+      <LifeCycle/>
     </>
   )
 }

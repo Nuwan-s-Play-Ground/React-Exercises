@@ -6,11 +6,17 @@ class LifeCycle extends React.Component{
         this.state = {}
     }
 
+    componentDidMount(){
+
+    }
+
     render(){
         return(
             <div>
-                
+
             </div>
         )
     }
 }
+
+export default LifeCycle
