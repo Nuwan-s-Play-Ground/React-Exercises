@@ -13,7 +13,7 @@ import ClassComponents from './ClassComponents'
 import EventHandling from './EventHandling'
 import ChangingState from './ChangingState'
 import LifeCycle from './LifeCycle'
-
+import ConditionalRenderingPractice from './ConditionalRenderingPractice'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -34,6 +34,7 @@ function App() {
       <EventHandling/>
       <ChangingState/>
       <LifeCycle/>
+      <ConditionalRenderingPractice/>
     </>
   )
 }
