@@ -14,6 +14,7 @@ import EventHandling from './EventHandling'
 import ChangingState from './ChangingState'
 import LifeCycle from './LifeCycle'
 import ConditionalRenderingPractice from './ConditionalRenderingPractice'
+import FetchData from './FetchData'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -35,6 +36,7 @@ function App() {
       <ChangingState/>
       <LifeCycle/>
       <ConditionalRenderingPractice/>
+      <FetchData/>
     </>
   )
 }
