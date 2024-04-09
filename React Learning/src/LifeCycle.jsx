@@ -48,6 +48,7 @@ class LifeCycle extends React.Component{
         return(
             <div>
                 <Conditional isLoading={this.state.isLoading}/>
+                
             </div>
         )
     }
