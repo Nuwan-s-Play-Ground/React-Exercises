@@ -16,6 +16,8 @@ import LifeCycle from './LifeCycle'
 import ConditionalRenderingPractice from './ConditionalRenderingPractice'
 import FetchData from './FetchData'
 import PracticeForm from './PracticeForm'
+import Count from './Count'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -39,6 +41,7 @@ function App() {
       <ConditionalRenderingPractice/>
       <FetchData/>
       <PracticeForm/>
+      <Count/>
     </>
   )
 }
