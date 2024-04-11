@@ -6,9 +6,16 @@ class Count extends React.Component{
         this.state = {
             counter : 0
         }
+        this.state = {favoritefood: "rice"};
 
         this.increment = () => this.setState({counter : this.state.counter + 1});
         this.decrement = () => this.setState({counter : this.state.counter - 1});
+    }
+
+    componentDidMount(){
+        setTimeout(() => {
+            this.setState({favoritefood: "pizza"})
+        }, 1000)
     }
 
     render(){
@@ -19,6 +26,7 @@ class Count extends React.Component{
                 <div className="counter">
                 Counter:{this.state.counter}
                 </div>
+                <h1>My Favorite Food is {this.state.favoritefood}</h1>
             </div>
         )
     }
