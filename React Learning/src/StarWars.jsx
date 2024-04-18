@@ -15,6 +15,7 @@ export default class StarWars extends Component {
             .then(Response => Response.json())
             .then(data => {
                 this.setState({
+                    loading:false,
                     character : data
                 })
         })
