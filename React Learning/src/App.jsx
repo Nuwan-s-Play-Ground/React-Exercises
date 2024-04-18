@@ -17,6 +17,7 @@ import ConditionalRenderingPractice from './ConditionalRenderingPractice'
 import FetchData from './FetchData'
 import PracticeForm from './PracticeForm'
 import Count from './Count'
+import StarWars from './StarWars'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -42,6 +43,7 @@ function App() {
       <FetchData/>
       <PracticeForm/>
       <Count/>
+      <StarWars/>
     </>
   )
 }
