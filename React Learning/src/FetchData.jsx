@@ -5,7 +5,7 @@ function FetchData() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+  const apiKey = 'your actual API key'; // Replace with your actual API key
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,7 +38,15 @@ function FetchData() {
   return (
     <div>
       <h1>Weather Data</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <div>
+      <h1>Weather Data for {data.name}</h1>
+      <div>
+        <p>Temperature: {data.main.temp}°C</p>
+        <p>Description: {data.weather[0].description}</p>
+        <p>Humidity: {data.main.humidity}%</p>
+        <p>Wind Speed: {data.wind.speed} m/s</p>
+      </div>
+    </div>
     </div>
   );
 }
