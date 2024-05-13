@@ -11,7 +11,7 @@ export default class StarWars extends Component {
 
     componentDidMount(){
         this.setState({loading:true})
-        fetch("https://swapi.dev/api/people/1")
+        fetch("https://swapi.dev/api/people/4")
             .then(Response => Response.json())
             .then(data => {
                 this.setState({
