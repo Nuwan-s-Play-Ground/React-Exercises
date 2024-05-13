@@ -18,6 +18,7 @@ import FetchData from './FetchData'
 import PracticeForm from './PracticeForm'
 import Count from './Count'
 import StarWars from './StarWars'
+import LampApp from './LampApp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -44,6 +45,7 @@ function App() {
       <PracticeForm/>
       <Count/>
       <StarWars/>
+      <LampApp/>
     </>
   )
 }

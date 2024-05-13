@@ -12,7 +12,7 @@ const Room = styled.div`
   margin: 0 auto;
 `;
 
-function App() {
+function LampApp() {
   // Lamp one
   const [isLampOneOn, setIsLampOneOn] = useState(false);
   // Lamp two
@@ -41,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default LampApp;
